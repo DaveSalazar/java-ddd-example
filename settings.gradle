@@ -1,0 +1,8 @@
+rootProject.name = 'test_event_bus'
+
+include ':shared'
+project(':shared').projectDir = new File('src/shared')
+
+include ':administration'
+project(':administration').projectDir = new File('src/administration')
+

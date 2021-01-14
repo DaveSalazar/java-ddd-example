@@ -1,0 +1,15 @@
+# Gradle
+.gradle
+build/
+tmp/
+
+#idea
+.idea
+
+# Ignore Gradle GUI config
+gradle-app.setting
+/var/*
+.env.local
+.env.*.local
+*.hprof
+*.png
