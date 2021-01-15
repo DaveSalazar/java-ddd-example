@@ -52,6 +52,16 @@ subprojects {
         }
     }
 
+    dependencies {
+
+        testImplementation rootProject.sourceSets.main.output
+
+        // hace que shared sea reconocido por los otros modulos
+        if (project.name != "shared") {
+            implementation project(":shared")
+            testImplementation project(":shared").sourceSets.test.output
+        }
+    }
     jar {
         enabled = true
     }
